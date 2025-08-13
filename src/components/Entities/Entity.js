@@ -4,6 +4,7 @@ import './Entity.css';
 
 const Entity = ({ name, img, level ,category}) => {
   return (
+  <Link to={`/wiki/${category}/${name}`}>
     <div className="entity">
       <img src={img} alt={name} />
       <div className="info">
@@ -12,6 +13,7 @@ const Entity = ({ name, img, level ,category}) => {
         <h2>Description</h2>
       </div>
     </div>
+  </Link>
   );
 }
 
